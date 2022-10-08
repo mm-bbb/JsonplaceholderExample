@@ -80,4 +80,10 @@ dependencies {
 
     //CardView
     implementation "androidx.cardview:cardview:1.0.0"
+
+    //OkHTTP
+    implementation ('com.squareup.okhttp3:okhttp:3.12.1') {
+        exclude group: 'com.squareup.okio', module: 'okio'
+    }
+    implementation "com.squareup.okhttp3:logging-interceptor:3.12.1"
 }
